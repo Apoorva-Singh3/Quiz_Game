@@ -39,11 +39,14 @@ for key, value in quiz.items():
         print("Correct")
         score += 1
         print('Your score is : ' + str(score))
-        print('Your percentage is ' + str(int(score/7 * 100)) + '%')
         print('')
         print('')
     else:
         print('Wrong !')
+        print('The answer is ' + value['answer'])
         print('Your score is ' + str(score))
         print('')
         print('')
+        
+print('You got '+ str(score) + ' correct out of 7 questions')
+print('Your percentage is ' + str(int(score/7 * 100)) + '%' )
